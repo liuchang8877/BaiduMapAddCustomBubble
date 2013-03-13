@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A37A71D16EABB48008D7F97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A37A71C16EABB48008D7F97 /* UIKit.framework */; };
+		5A37A71F16EABB48008D7F97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A37A71E16EABB48008D7F97 /* Foundation.framework */; };
+		5A37A72116EABB48008D7F97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A37A72016EABB48008D7F97 /* CoreGraphics.framework */; };
+		5A37A72716EABB48008D7F97 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A37A72516EABB48008D7F97 /* InfoPlist.strings */; };
+		5A37A72916EABB48008D7F97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A37A72816EABB48008D7F97 /* main.m */; };
+		5A37A72D16EABB48008D7F97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A37A72C16EABB48008D7F97 /* AppDelegate.m */; };
+		5A37A72F16EABB48008D7F97 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A37A72E16EABB48008D7F97 /* Default.png */; };
+		5A37A73116EABB48008D7F97 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A37A73016EABB48008D7F97 /* Default@2x.png */; };
+		5A37A73316EABB48008D7F97 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A37A73216EABB48008D7F97 /* Default-568h@2x.png */; };
+		5A37A73616EABB48008D7F97 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A37A73516EABB48008D7F97 /* ViewController.m */; };
+		5A37A73916EABB48008D7F97 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A37A73716EABB48008D7F97 /* ViewController_iPhone.xib */; };
+		5A37A73C16EABB48008D7F97 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A37A73A16EABB48008D7F97 /* ViewController_iPad.xib */; };
+		5A37A77316EABBCC008D7F97 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A37A77116EABBB6008D7F97 /* MapKit.framework */; };
+		5A37A77416EABBD5008D7F97 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A37A76F16EABBA5008D7F97 /* CoreLocation.framework */; };
+		5A53CE5816F00AA200FF7A15 /* libbaidumapapi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A53CE5716F00AA200FF7A15 /* libbaidumapapi.a */; };
+		5A7D00A916EF38EE00A1E4ED /* GeocodeDemoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D007D16EF38EE00A1E4ED /* GeocodeDemoViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5A7D00AA16EF38EE00A1E4ED /* GeocodeDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A7D007E16EF38EE00A1E4ED /* GeocodeDemoViewController.xib */; };
+		5A7D00AB16EF38EE00A1E4ED /* KYBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D009E16EF38EE00A1E4ED /* KYBubbleView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5A7D00AC16EF38EE00A1E4ED /* KYPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D00A016EF38EE00A1E4ED /* KYPointAnnotation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5A7D00AF16EF38EE00A1E4ED /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5A7D00A616EF38EE00A1E4ED /* mapapi.bundle */; };
+		5A7D00B316EF396200A1E4ED /* MXSNewsTypeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D00B116EF394D00A1E4ED /* MXSNewsTypeListViewController.m */; };
+		5A7D00BA16EF3C3600A1E4ED /* MXSNewsTypeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A7D00B216EF394D00A1E4ED /* MXSNewsTypeListViewController.xib */; };
+		5A7D00BC16EF3E1C00A1E4ED /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7D00BB16EF3E1C00A1E4ED /* QuartzCore.framework */; };
+		5A7D00BE16EF3EEE00A1E4ED /* libbaidumapapi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7D00BD16EF3EEE00A1E4ED /* libbaidumapapi.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5A37A71916EABB48008D7F97 /* BaiduMapAddCustomBubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiduMapAddCustomBubble.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A37A71C16EABB48008D7F97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5A37A71E16EABB48008D7F97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5A37A72016EABB48008D7F97 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5A37A72416EABB48008D7F97 /* BaiduMapAddCustomBubble-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BaiduMapAddCustomBubble-Info.plist"; sourceTree = "<group>"; };
+		5A37A72616EABB48008D7F97 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5A37A72816EABB48008D7F97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A37A72A16EABB48008D7F97 /* BaiduMapAddCustomBubble-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaiduMapAddCustomBubble-Prefix.pch"; sourceTree = "<group>"; };
+		5A37A72B16EABB48008D7F97 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5A37A72C16EABB48008D7F97 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5A37A72E16EABB48008D7F97 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5A37A73016EABB48008D7F97 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5A37A73216EABB48008D7F97 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5A37A73416EABB48008D7F97 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5A37A73516EABB48008D7F97 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5A37A73816EABB48008D7F97 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		5A37A73B16EABB48008D7F97 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		5A37A76F16EABBA5008D7F97 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5A37A77116EABBB6008D7F97 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5A53CE5716F00AA200FF7A15 /* libbaidumapapi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbaidumapapi.a; path = "map/libs/Release-iphoneos/libbaidumapapi.a"; sourceTree = "<group>"; };
+		5A7D007C16EF38EE00A1E4ED /* GeocodeDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeocodeDemoViewController.h; sourceTree = "<group>"; };
+		5A7D007D16EF38EE00A1E4ED /* GeocodeDemoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GeocodeDemoViewController.mm; sourceTree = "<group>"; };
+		5A7D007E16EF38EE00A1E4ED /* GeocodeDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeocodeDemoViewController.xib; sourceTree = "<group>"; };
+		5A7D008016EF38EE00A1E4ED /* BMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMapKit.h; sourceTree = "<group>"; };
+		5A7D008116EF38EE00A1E4ED /* BMKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKAnnotation.h; sourceTree = "<group>"; };
+		5A7D008216EF38EE00A1E4ED /* BMKAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKAnnotationView.h; sourceTree = "<group>"; };
+		5A7D008316EF38EE00A1E4ED /* BMKCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKCircle.h; sourceTree = "<group>"; };
+		5A7D008416EF38EE00A1E4ED /* BMKCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKCircleView.h; sourceTree = "<group>"; };
+		5A7D008516EF38EE00A1E4ED /* BMKGeneralDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKGeneralDelegate.h; sourceTree = "<group>"; };
+		5A7D008616EF38EE00A1E4ED /* BMKGeocodeType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKGeocodeType.h; sourceTree = "<group>"; };
+		5A7D008716EF38EE00A1E4ED /* BMKGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKGeometry.h; sourceTree = "<group>"; };
+		5A7D008816EF38EE00A1E4ED /* BMKMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKMapManager.h; sourceTree = "<group>"; };
+		5A7D008916EF38EE00A1E4ED /* BMKMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKMapView.h; sourceTree = "<group>"; };
+		5A7D008A16EF38EE00A1E4ED /* BMKMultiPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKMultiPoint.h; sourceTree = "<group>"; };
+		5A7D008B16EF38EE00A1E4ED /* BMKOfflineMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOfflineMap.h; sourceTree = "<group>"; };
+		5A7D008C16EF38EE00A1E4ED /* BMKOfflineMapType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOfflineMapType.h; sourceTree = "<group>"; };
+		5A7D008D16EF38EE00A1E4ED /* BMKOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOverlay.h; sourceTree = "<group>"; };
+		5A7D008E16EF38EE00A1E4ED /* BMKOverlayPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOverlayPathView.h; sourceTree = "<group>"; };
+		5A7D008F16EF38EE00A1E4ED /* BMKOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOverlayView.h; sourceTree = "<group>"; };
+		5A7D009016EF38EE00A1E4ED /* BMKPinAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPinAnnotationView.h; sourceTree = "<group>"; };
+		5A7D009116EF38EE00A1E4ED /* BMKPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPointAnnotation.h; sourceTree = "<group>"; };
+		5A7D009216EF38EE00A1E4ED /* BMKPoiSearchType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPoiSearchType.h; sourceTree = "<group>"; };
+		5A7D009316EF38EE00A1E4ED /* BMKPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPolygon.h; sourceTree = "<group>"; };
+		5A7D009416EF38EE00A1E4ED /* BMKPolygonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPolygonView.h; sourceTree = "<group>"; };
+		5A7D009516EF38EE00A1E4ED /* BMKPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPolyline.h; sourceTree = "<group>"; };
+		5A7D009616EF38EE00A1E4ED /* BMKPolylineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPolylineView.h; sourceTree = "<group>"; };
+		5A7D009716EF38EE00A1E4ED /* BMKRouteSearchType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKRouteSearchType.h; sourceTree = "<group>"; };
+		5A7D009816EF38EE00A1E4ED /* BMKSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKSearch.h; sourceTree = "<group>"; };
+		5A7D009916EF38EE00A1E4ED /* BMKShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKShape.h; sourceTree = "<group>"; };
+		5A7D009A16EF38EE00A1E4ED /* BMKTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKTypes.h; sourceTree = "<group>"; };
+		5A7D009B16EF38EE00A1E4ED /* BMKUserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKUserLocation.h; sourceTree = "<group>"; };
+		5A7D009C16EF38EE00A1E4ED /* BMKVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKVersion.h; sourceTree = "<group>"; };
+		5A7D009D16EF38EE00A1E4ED /* KYBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KYBubbleView.h; path = ../KYBubbleView.h; sourceTree = "<group>"; };
+		5A7D009E16EF38EE00A1E4ED /* KYBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KYBubbleView.m; path = ../KYBubbleView.m; sourceTree = "<group>"; };
+		5A7D009F16EF38EE00A1E4ED /* KYPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KYPointAnnotation.h; path = ../KYPointAnnotation.h; sourceTree = "<group>"; };
+		5A7D00A016EF38EE00A1E4ED /* KYPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KYPointAnnotation.m; path = ../KYPointAnnotation.m; sourceTree = "<group>"; };
+		5A7D00A616EF38EE00A1E4ED /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
+		5A7D00B016EF394D00A1E4ED /* MXSNewsTypeListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXSNewsTypeListViewController.h; sourceTree = "<group>"; };
+		5A7D00B116EF394D00A1E4ED /* MXSNewsTypeListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXSNewsTypeListViewController.m; sourceTree = "<group>"; };
+		5A7D00B216EF394D00A1E4ED /* MXSNewsTypeListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MXSNewsTypeListViewController.xib; sourceTree = "<group>"; };
+		5A7D00B416EF3B0C00A1E4ED /* KYBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYBubbleView.m; sourceTree = "<group>"; };
+		5A7D00B516EF3B0C00A1E4ED /* KYBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYBubbleView.h; sourceTree = "<group>"; };
+		5A7D00B616EF3B0C00A1E4ED /* KYPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYPointAnnotation.h; sourceTree = "<group>"; };
+		5A7D00B716EF3B0C00A1E4ED /* KYPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYPointAnnotation.m; sourceTree = "<group>"; };
+		5A7D00BB16EF3E1C00A1E4ED /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5A7D00BD16EF3EEE00A1E4ED /* libbaidumapapi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbaidumapapi.a; path = "map/libs/Release-iphonesimulator/libbaidumapapi.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A37A71616EABB48008D7F97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A53CE5816F00AA200FF7A15 /* libbaidumapapi.a in Frameworks */,
+				5A7D00BE16EF3EEE00A1E4ED /* libbaidumapapi.a in Frameworks */,
+				5A7D00BC16EF3E1C00A1E4ED /* QuartzCore.framework in Frameworks */,
+				5A37A77416EABBD5008D7F97 /* CoreLocation.framework in Frameworks */,
+				5A37A77316EABBCC008D7F97 /* MapKit.framework in Frameworks */,
+				5A37A71D16EABB48008D7F97 /* UIKit.framework in Frameworks */,
+				5A37A71F16EABB48008D7F97 /* Foundation.framework in Frameworks */,
+				5A37A72116EABB48008D7F97 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A37A71016EABB48008D7F97 = {
+			isa = PBXGroup;
+			children = (
+				5A53CE5716F00AA200FF7A15 /* libbaidumapapi.a */,
+				5A7D00BD16EF3EEE00A1E4ED /* libbaidumapapi.a */,
+				5A7D00BB16EF3E1C00A1E4ED /* QuartzCore.framework */,
+				5A7D007616EF38EE00A1E4ED /* map */,
+				5A37A72216EABB48008D7F97 /* BaiduMapAddCustomBubble */,
+				5A37A71B16EABB48008D7F97 /* Frameworks */,
+				5A37A71A16EABB48008D7F97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A37A71A16EABB48008D7F97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A37A71916EABB48008D7F97 /* BaiduMapAddCustomBubble.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A37A71B16EABB48008D7F97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A37A77116EABBB6008D7F97 /* MapKit.framework */,
+				5A37A76F16EABBA5008D7F97 /* CoreLocation.framework */,
+				5A37A71C16EABB48008D7F97 /* UIKit.framework */,
+				5A37A71E16EABB48008D7F97 /* Foundation.framework */,
+				5A37A72016EABB48008D7F97 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A37A72216EABB48008D7F97 /* BaiduMapAddCustomBubble */ = {
+			isa = PBXGroup;
+			children = (
+				5A37A72B16EABB48008D7F97 /* AppDelegate.h */,
+				5A37A72C16EABB48008D7F97 /* AppDelegate.m */,
+				5A37A73416EABB48008D7F97 /* ViewController.h */,
+				5A37A73516EABB48008D7F97 /* ViewController.m */,
+				5A37A73716EABB48008D7F97 /* ViewController_iPhone.xib */,
+				5A37A73A16EABB48008D7F97 /* ViewController_iPad.xib */,
+				5A37A72316EABB48008D7F97 /* Supporting Files */,
+			);
+			name = BaiduMapAddCustomBubble;
+			path = testMap;
+			sourceTree = "<group>";
+		};
+		5A37A72316EABB48008D7F97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A37A72416EABB48008D7F97 /* BaiduMapAddCustomBubble-Info.plist */,
+				5A37A72516EABB48008D7F97 /* InfoPlist.strings */,
+				5A37A72816EABB48008D7F97 /* main.m */,
+				5A37A72A16EABB48008D7F97 /* BaiduMapAddCustomBubble-Prefix.pch */,
+				5A37A72E16EABB48008D7F97 /* Default.png */,
+				5A37A73016EABB48008D7F97 /* Default@2x.png */,
+				5A37A73216EABB48008D7F97 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A7D007616EF38EE00A1E4ED /* map */ = {
+			isa = PBXGroup;
+			children = (
+				5A7D007716EF38EE00A1E4ED /* class */,
+				5A7D007C16EF38EE00A1E4ED /* GeocodeDemoViewController.h */,
+				5A7D007D16EF38EE00A1E4ED /* GeocodeDemoViewController.mm */,
+				5A7D007E16EF38EE00A1E4ED /* GeocodeDemoViewController.xib */,
+				5A7D007F16EF38EE00A1E4ED /* inc */,
+				5A7D00A616EF38EE00A1E4ED /* mapapi.bundle */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		5A7D007716EF38EE00A1E4ED /* class */ = {
+			isa = PBXGroup;
+			children = (
+				5A7D009D16EF38EE00A1E4ED /* KYBubbleView.h */,
+				5A7D009E16EF38EE00A1E4ED /* KYBubbleView.m */,
+				5A7D009F16EF38EE00A1E4ED /* KYPointAnnotation.h */,
+				5A7D00A016EF38EE00A1E4ED /* KYPointAnnotation.m */,
+				5A7D00B516EF3B0C00A1E4ED /* KYBubbleView.h */,
+				5A7D00B416EF3B0C00A1E4ED /* KYBubbleView.m */,
+				5A7D00B616EF3B0C00A1E4ED /* KYPointAnnotation.h */,
+				5A7D00B716EF3B0C00A1E4ED /* KYPointAnnotation.m */,
+				5A7D00B016EF394D00A1E4ED /* MXSNewsTypeListViewController.h */,
+				5A7D00B116EF394D00A1E4ED /* MXSNewsTypeListViewController.m */,
+				5A7D00B216EF394D00A1E4ED /* MXSNewsTypeListViewController.xib */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		5A7D007F16EF38EE00A1E4ED /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				5A7D008016EF38EE00A1E4ED /* BMapKit.h */,
+				5A7D008116EF38EE00A1E4ED /* BMKAnnotation.h */,
+				5A7D008216EF38EE00A1E4ED /* BMKAnnotationView.h */,
+				5A7D008316EF38EE00A1E4ED /* BMKCircle.h */,
+				5A7D008416EF38EE00A1E4ED /* BMKCircleView.h */,
+				5A7D008516EF38EE00A1E4ED /* BMKGeneralDelegate.h */,
+				5A7D008616EF38EE00A1E4ED /* BMKGeocodeType.h */,
+				5A7D008716EF38EE00A1E4ED /* BMKGeometry.h */,
+				5A7D008816EF38EE00A1E4ED /* BMKMapManager.h */,
+				5A7D008916EF38EE00A1E4ED /* BMKMapView.h */,
+				5A7D008A16EF38EE00A1E4ED /* BMKMultiPoint.h */,
+				5A7D008B16EF38EE00A1E4ED /* BMKOfflineMap.h */,
+				5A7D008C16EF38EE00A1E4ED /* BMKOfflineMapType.h */,
+				5A7D008D16EF38EE00A1E4ED /* BMKOverlay.h */,
+				5A7D008E16EF38EE00A1E4ED /* BMKOverlayPathView.h */,
+				5A7D008F16EF38EE00A1E4ED /* BMKOverlayView.h */,
+				5A7D009016EF38EE00A1E4ED /* BMKPinAnnotationView.h */,
+				5A7D009116EF38EE00A1E4ED /* BMKPointAnnotation.h */,
+				5A7D009216EF38EE00A1E4ED /* BMKPoiSearchType.h */,
+				5A7D009316EF38EE00A1E4ED /* BMKPolygon.h */,
+				5A7D009416EF38EE00A1E4ED /* BMKPolygonView.h */,
+				5A7D009516EF38EE00A1E4ED /* BMKPolyline.h */,
+				5A7D009616EF38EE00A1E4ED /* BMKPolylineView.h */,
+				5A7D009716EF38EE00A1E4ED /* BMKRouteSearchType.h */,
+				5A7D009816EF38EE00A1E4ED /* BMKSearch.h */,
+				5A7D009916EF38EE00A1E4ED /* BMKShape.h */,
+				5A7D009A16EF38EE00A1E4ED /* BMKTypes.h */,
+				5A7D009B16EF38EE00A1E4ED /* BMKUserLocation.h */,
+				5A7D009C16EF38EE00A1E4ED /* BMKVersion.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A37A71816EABB48008D7F97 /* BaiduMapAddCustomBubble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A37A73F16EABB48008D7F97 /* Build configuration list for PBXNativeTarget "BaiduMapAddCustomBubble" */;
+			buildPhases = (
+				5A37A71516EABB48008D7F97 /* Sources */,
+				5A37A71616EABB48008D7F97 /* Frameworks */,
+				5A37A71716EABB48008D7F97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BaiduMapAddCustomBubble;
+			productName = testMap;
+			productReference = 5A37A71916EABB48008D7F97 /* BaiduMapAddCustomBubble.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A37A71116EABB48008D7F97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = liu;
+			};
+			buildConfigurationList = 5A37A71416EABB48008D7F97 /* Build configuration list for PBXProject "BaiduMapAddCustomBubble" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5A37A71016EABB48008D7F97;
+			productRefGroup = 5A37A71A16EABB48008D7F97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A37A71816EABB48008D7F97 /* BaiduMapAddCustomBubble */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A37A71716EABB48008D7F97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A37A72716EABB48008D7F97 /* InfoPlist.strings in Resources */,
+				5A37A72F16EABB48008D7F97 /* Default.png in Resources */,
+				5A37A73116EABB48008D7F97 /* Default@2x.png in Resources */,
+				5A37A73316EABB48008D7F97 /* Default-568h@2x.png in Resources */,
+				5A37A73916EABB48008D7F97 /* ViewController_iPhone.xib in Resources */,
+				5A37A73C16EABB48008D7F97 /* ViewController_iPad.xib in Resources */,
+				5A7D00AA16EF38EE00A1E4ED /* GeocodeDemoViewController.xib in Resources */,
+				5A7D00AF16EF38EE00A1E4ED /* mapapi.bundle in Resources */,
+				5A7D00BA16EF3C3600A1E4ED /* MXSNewsTypeListViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A37A71516EABB48008D7F97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A7D00B316EF396200A1E4ED /* MXSNewsTypeListViewController.m in Sources */,
+				5A37A72916EABB48008D7F97 /* main.m in Sources */,
+				5A37A72D16EABB48008D7F97 /* AppDelegate.m in Sources */,
+				5A37A73616EABB48008D7F97 /* ViewController.m in Sources */,
+				5A7D00A916EF38EE00A1E4ED /* GeocodeDemoViewController.mm in Sources */,
+				5A7D00AB16EF38EE00A1E4ED /* KYBubbleView.m in Sources */,
+				5A7D00AC16EF38EE00A1E4ED /* KYPointAnnotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5A37A72516EABB48008D7F97 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A37A72616EABB48008D7F97 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5A37A73716EABB48008D7F97 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A37A73816EABB48008D7F97 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		5A37A73A16EABB48008D7F97 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A37A73B16EABB48008D7F97 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A37A73D16EABB48008D7F97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		5A37A73E16EABB48008D7F97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+		5A37A74016EABB48008D7F97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: li hongfan (M4RV9UN49E)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "testMap/BaiduMapAddCustomBubble-Prefix.pch";
+				INFOPLIST_FILE = "testMap/BaiduMapAddCustomBubble-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/map/libs/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/map/libs/Release-iphoneos\"",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = BaiduMapAddCustomBubble;
+				PROVISIONING_PROFILE = "3B6DB9A8-50F3-4C6F-9585-274CFCFEB332";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5A37A74116EABB48008D7F97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: li hongfan (M4RV9UN49E)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "testMap/BaiduMapAddCustomBubble-Prefix.pch";
+				INFOPLIST_FILE = "testMap/BaiduMapAddCustomBubble-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/map/libs/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/map/libs/Release-iphoneos\"",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = BaiduMapAddCustomBubble;
+				PROVISIONING_PROFILE = "3B6DB9A8-50F3-4C6F-9585-274CFCFEB332";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A37A71416EABB48008D7F97 /* Build configuration list for PBXProject "BaiduMapAddCustomBubble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A37A73D16EABB48008D7F97 /* Debug */,
+				5A37A73E16EABB48008D7F97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A37A73F16EABB48008D7F97 /* Build configuration list for PBXNativeTarget "BaiduMapAddCustomBubble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A37A74016EABB48008D7F97 /* Debug */,
+				5A37A74116EABB48008D7F97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A37A71116EABB48008D7F97 /* Project object */;
+}
