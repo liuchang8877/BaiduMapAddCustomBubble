@@ -14,7 +14,7 @@ BaiduMapAddCustomBubble
 3.添加注册key
 //--------AppDelegate.h
  
-#import "BMapKit.h"
+ #import "BMapKit.h"
  
 @interface AppDelegate : UIResponder &lt;UIApplicationDelegate,UINavigationControllerDelegate,BMKGeneralDelegate&gt;
  
