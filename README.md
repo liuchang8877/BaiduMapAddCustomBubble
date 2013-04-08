@@ -49,3 +49,8 @@ BMKMapManager* _mapManager;
 }
 
 4.如果使用ARC 机制后，添加时，应该注意在TARHETS ---> Build Phases --->对应的文件 添加“-fno-objc-arc” 
+
+
+欢迎大家一起交流：
+Email：liuchang8877@gmail.com
+weibo：www.weibo.com/we1700
