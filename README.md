@@ -54,3 +54,4 @@ BMKMapManager* _mapManager;
 欢迎大家一起交流：
 Email：liuchang8877@gmail.com
 weibo：http://www.weibo.com/we1700
+blog:http://firefrog.sinaapp.com/
